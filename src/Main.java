@@ -77,11 +77,11 @@ public class Main {
             rowLabel = (char)('A' + index);
             System.out.print(rowLabel + ":");
             for (double weight : stadiumRows[index]) {
-                System.out.printf("%7.1f", weight);
+                System.out.printf("%5.1f", weight);
             }
             double totalWeight = calculateTotalWeightInRow(stadiumRows[index]);
             double averageWeight = calculateAverageWeight(stadiumRows[index]);
-            System.out.printf("  [%7.1f, %7.1f]%n", totalWeight, averageWeight);
+            System.out.printf("  [%5.1f, %5.1f]%n", totalWeight, averageWeight);
         }
     }//end of printStadium method
 
